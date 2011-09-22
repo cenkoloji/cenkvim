@@ -125,3 +125,54 @@ snippet fig2
 	\end{minipage} 
 	\caption{\label{${3:figure label}} ${4:Caption of figure}}
 	\end{figure}
+
+#Beamer Stuff
+
+#Frame
+snippet frame
+	\begin{frame}{${1:framename}} % {{{
+
+	\end{frame}
+	% $1 }}}
+
+#Frame with columns and figures
+snippet framecol
+	\begin{frame}{${1:framename}} %  {{{
+	\begin{columns}
+	\column{0.5\textwidth}
+	\begin{itemize}
+	\item ${2}
+	\item
+	\item
+	\end{itemize}
+	\column{0.5\textwidth}
+	\begin{center}
+	    \includegraphics[width=\textwidth]{plots/${3:plotfilename}}
+	 \end{center}
+	 \end{columns}
+
+	\end{frame}
+	% $1 }}}
+
+#Frame with Blocks
+snippet framebl
+	\begin{frame}{${1:framename}} % {{{
+	\begin{block}{${2:blocktitle}}
+	    \begin{itemize}
+	    \item ${3}
+	    \item
+	    \item
+	    \end{itemize}
+	\end{block}
+
+	\begin{block}{${4:blocktitle}}
+	    \begin{itemize}
+	    \item ${5}
+	    \item
+	    \item
+	    \end{itemize}
+	\end{block}
+
+	\end{frame}
+	% $1 }}}
+
