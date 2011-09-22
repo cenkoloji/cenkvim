@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/cyildiz/Dropbox/cfg/.vim'
+let g:netrw_dirhist_2='/home/cyildiz/Dropbox/cfg'
+let g:netrw_dirhist_3='/afs/cern.ch/exp/cast/mmscratch/cenk/mMroot2004'
+let g:netrw_dirhist_4='/afs/cern.ch/exp/cast/mmscratch/cenk/mMStudies/ArIsoTests2011/latex'
+let g:netrw_dirhist_5='/afs/cern.ch/user/c/cyildiz/private/prog/Javi'
+let g:netrw_dirhist_6='/usr/include/proc'
