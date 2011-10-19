@@ -8,6 +8,18 @@ snippet tab
 	\begin{${1:tabular}}{${2:c}}
 	${3}
 	\end{$1}
+#Tabular with some style
+snippet tab2
+	\begin{table}
+	\centering
+	    \begin{tabular}{c| c c c}
+	    & & & \\ \hline \hline
+	    & & & \\
+	    & & & \\
+	    & & & \\
+	    \end{tabular}
+	\label{${1:Label of the table}}
+	\end{table}
 # Align(ed)
 snippet ali
 	\begin{align${1:ed}}
