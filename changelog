@@ -1,5 +1,6 @@
 19-10-2011 Cenk Yildiz <scyildiz@gmail.com>
 	* Added a better tabular snippet in tex.snippets
+	* Added minipage snippet to tex.snippets
 
 04-10-2011 Cenk Yildiz <scyildiz@gmail.com>
 	* Added little snippets to python for importing np, matplotlib
