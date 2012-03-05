@@ -127,10 +127,13 @@ snippet section
 snippet page
 	${1:page}~\pageref{${2}}${3}
 snippet fig
-	\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{${1:filename1}}
-	\caption{\label{${2:figure label}} ${3:Caption of figure}}
+	\begin{figure}[htbp]
+	\begin{center}
+	\includegraphics[width=0.5\columnwidth]{${1:filename1}}
+	\end{center}
+	\caption{ ${3:Caption of figure}}
+	\vskip\baselineskip
+	\label{${2:figure label}}
 	\end{figure}
 snippet fig2
 	\begin{figure}[h]

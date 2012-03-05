@@ -21,6 +21,8 @@ set foldmethod=marker
 set incsearch 
 set shiftwidth=4	" used by >> and <<
 
+"Setting directory for swap files
+set directory^=$HOME/.vim_swap
 
 "allow deleting selection without updating the clipboard (yank buffer)
 vnoremap x "_x
@@ -38,7 +40,7 @@ set softtabstop=4  " instead of tabs, insert 4 whitespaces
 set expandtab   " to work compatible with 'set softtabstop=4'
 set shiftwidth=4 " sets the default 
 set shiftround " makes indent always multiples of shiftwidth (when used > and <)
-imap <silent> <S-tab> <C-v><tab> " Shift-tab to insert a hard tab
+"imap <silent> <S-tab> <C-v><tab> " Shift-tab to insert a hard tab
 "set nojoinspaces " Not sure, leave it off
 " }}}
 
