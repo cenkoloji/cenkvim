@@ -72,13 +72,13 @@ filetype plugin on
 "filetype plugin indent on
 
 "Execute python files by a single keystroke
-map <buffer> <F5> :w<CR>:!/usr/bin/env python % <CR>
+map <F5> :w<CR>:!/usr/bin/env python % <CR>
 
 "Compile latex files with single stroke
-map <buffer> <F6> :w<CR>:!pdflatex % <CR>
+map <F6> :w<CR>:!pdflatex % <CR>
 
 "Open pdf files in the current dir with single stroke
-map <buffer> <F7> :!evince *.pdf& <CR>
+map <F7> :!evince *.pdf& <CR>
 
 "My abbreviations
 ":iabbrev myAddr Chez. Maria Padkina, Rue Crespin 16, 1206, GE / Switzerland
@@ -130,6 +130,8 @@ map <C-left> <ESC>:tabp<CR>
 if has("autocmd")
   " In text files, always limit the width of text to 100 characters
   autocmd BufRead *.txt set tw=100
+  " In tex files, always limit the width of text to 120 characters
+  autocmd BufRead *.tex set tw=120
   " When editing a file, always jump to the last cursor position
   autocmd BufReadPost *
   \ if line("'\"") > 0 && line ("'\"") <= line("$") |
