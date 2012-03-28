@@ -5,9 +5,16 @@ snippet begin
 	\end{$1}
 # Tabular
 snippet tab
-	\begin{${1:tabular}}{${2:c}}
-	${3}
-	\end{$1}
+	\begin{table}[htbp]
+	\vskip\baselineskip 
+	\caption{${1:caption}}
+	\begin{center}
+	\begin{tabular}{c|c}
+	x & y \\ \hline
+	\end{tabular}
+	\end{center}
+	\label{tab:${2:label}}
+	\end{table}
 #Tabular with some style
 snippet tab2
 	\begin{table}
