@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/afs/cern.ch/user/c/cyildiz/CASTStudiesReports/gridPlan'
-let g:netrw_dirhist_2='/etc/openafs'
-let g:netrw_dirhist_3='/afs/cern.ch/user/c/cyildiz/private/prog/mmscripts'
-let g:netrw_dirhist_4='/afs/cern.ch/user/c/cyildiz/private/prog'
-let g:netrw_dirhist_5='/home/cyildiz/castor'
-let g:netrw_dirhist_6='/afs/cern.ch/user/c/cyildiz/mm/.git/refs/tags'
-let g:netrw_dirhist_7='/afs/cern.ch/user/c/cyildiz/private/prog/CASTStudies/SunFilming/2012'
-let g:netrw_dirhist_8='/afs/cern.ch/user/c/cyildiz/private/prog/CASTStudies/LaserCheck'
-let g:netrw_dirhist_9='/home/cyildiz/Documents/latex'
+let g:netrw_dirhist_cnt =0

@@ -155,6 +155,15 @@ snippet fig2
 	\vskip\baselineskip
 	\label{${3:figure label}}
 	\end{figure}
+snippet fig2a
+	\begin{figure}[htbp]
+	\centering
+	\subfigure[]{\label{fig:${3:}}\includegraphics[width=0.48\textwidth]{${1:f1}}}\qquad
+	\subfigure[]{\label{fig:${4:}}\includegraphics[width=0.48\textwidth]{${2:f2}}}
+	\caption{${5:}}
+	\vskip\baselineskip
+	\label{${6:fig:}}
+	\end{figure}
 snippet minipage
 	\begin{minipage}[b]{0.5\linewidth}
 	\centering
