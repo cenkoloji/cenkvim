@@ -5,7 +5,7 @@ snippet begin
 	\end{$1}
 # Tabular
 snippet tab
-	\begin{table}[htbp]
+	\begin{table}[h]
 	\vskip\baselineskip 
 	\caption{${1:caption}}
 	\begin{center}
@@ -134,7 +134,7 @@ snippet section
 snippet page
 	${1:page}~\pageref{${2}}${3}
 snippet fig
-	\begin{figure}[htbp]
+	\begin{figure}[h]
 	\begin{center}
 	\includegraphics[width=0.5\columnwidth]{${1:filename1}}
 	\end{center}
@@ -143,7 +143,7 @@ snippet fig
 	\label{${2:figure label}}
 	\end{figure}
 snippet fig2
-	\begin{figure}[htbp]
+	\begin{figure}[h]
 	\begin{minipage}{0.5\textwidth}
 	\includegraphics[width=\textwidth]{${1:filename1}}
 	\end{minipage}\hspace{2pc}
@@ -156,7 +156,7 @@ snippet fig2
 	\label{${3:figure label}}
 	\end{figure}
 snippet fig2a
-	\begin{figure}[htbp]
+	\begin{figure}[h]
 	\centering
 	\subfigure[]{\label{fig:${3:}}\includegraphics[width=0.48\textwidth]{${1:f1}}}\qquad
 	\subfigure[]{\label{fig:${4:}}\includegraphics[width=0.48\textwidth]{${2:f2}}}

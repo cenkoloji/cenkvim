@@ -21,6 +21,9 @@ set foldmethod=marker
 set incsearch 
 set shiftwidth=4	" used by >> and <<
 
+"Setting Spell file
+set spellfile=$HOME/.vim/dict.add
+
 "Setting directory for swap files
 set directory^=$HOME/.vim_swap
 
