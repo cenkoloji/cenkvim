@@ -190,3 +190,11 @@ endif
 "endif 
 " }}}
 
+function MyFoldText()
+    let indent_level = indent(v:foldstart)
+    let indent = repeat(' ',indent_level)
+    return indent.foldtext()
+endfunction
+
+
+set foldtext=MyFoldText()
