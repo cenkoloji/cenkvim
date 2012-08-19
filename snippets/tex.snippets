@@ -134,7 +134,7 @@ snippet section
 snippet page
 	${1:page}~\pageref{${2}}${3}
 snippet fig
-	\begin{figure}[h]
+	\begin{figure}[!htb]
 	\begin{center}
 	\includegraphics[width=0.5\columnwidth]{${1:filename1}}
 	\end{center}
@@ -143,20 +143,19 @@ snippet fig
 	\label{${2:figure label}}
 	\end{figure}
 snippet fig2
-	\begin{figure}[h]
+	\begin{figure}[!htb]
 	\begin{minipage}{0.5\textwidth}
 	\includegraphics[width=\textwidth]{${1:filename1}}
 	\end{minipage}\hspace{2pc}
 	\begin{minipage}{0.5\textwidth}
 	\includegraphics[width=\textwidth]{${2:filename1}}
 	\end{minipage} 
-	\vskip\baselineskip
 	\caption{ ${4:Caption of figure}}
 	\vskip\baselineskip
 	\label{${3:figure label}}
 	\end{figure}
 snippet fig2a
-	\begin{figure}[h]
+	\begin{figure}[!htb]
 	\centering
 	\subfigure[]{\label{fig:${3:}}\includegraphics[width=0.48\textwidth]{${1:f1}}}\qquad
 	\subfigure[]{\label{fig:${4:}}\includegraphics[width=0.48\textwidth]{${2:f2}}}
@@ -176,6 +175,10 @@ snippet minipage
 	\hspace{-1cm}
 	%\includegraphics[width=1.2\textwidth]{plots/shifted.pdf}
 	\end{minipage}
+
+
+snippet bib
+	\bibitem{${1:}} ${2:}\em{${3:}}
 
 #Beamer Stuff
 
