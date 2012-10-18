@@ -53,7 +53,7 @@ set statusline=%F%m%r%h%w\ [FRMT=%{&ff}]\ [TYPE=%Y]\ [P=%l/%L,%04v][%p%%]" Statu
 
 set cursorline
 set cursorcolumn
-highlight CursorLine ctermbg=lightgray
+highlight CursorLine ctermbg=none
 highlight CursorColumn ctermbg=lightgray
 
 "flag problematic whitespace (trailing and spaces before tabs)

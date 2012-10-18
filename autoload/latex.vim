@@ -16,3 +16,9 @@ vmap sf "zdi\frac{<C-R>z}<ESC>a{}<ESC>
 "To put & instead of all spaces (while preparing a tabular)
 vmap st :s/ \+/ \& /g<CR>
 
+
+" {\em }
+vmap se "zdi{\em <C-R>z}<ESC>
+
+" \enquote{ }
+vmap sq "zdi\enquote{ <C-R>z}<ESC>
