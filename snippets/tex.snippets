@@ -229,3 +229,21 @@ snippet framebl
 
 	\end{frame}
 	% frame $1 }}}
+
+
+snippet col
+	\begin{columns}
+	\column{0.5\textwidth}
+	\column{0.5\textwidth}
+	\begin{center}
+	    \includegraphics[width=\textwidth]{plots/${3:plotfilename}}
+	 \end{center}
+	 \end{columns}
+
+snippet bl
+	\begin{block}{${2:blocktitle}}
+	\end{block}
+
+	\begin{block}{${4:blocktitle}}
+	\end{block}
+
