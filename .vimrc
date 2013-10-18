@@ -56,6 +56,7 @@ set cursorcolumn
 highlight CursorLine ctermbg=none
 highlight CursorColumn ctermbg=lightgray
 
+
 "flag problematic whitespace (trailing and spaces before tabs)
 highlight RedundantSpaces term=standout ctermbg=red guibg=red
 match RedundantSpaces /\s\+$\| \+\ze\t/ "\ze sets end of match so only spaces highlighted
