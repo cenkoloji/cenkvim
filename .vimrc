@@ -19,7 +19,7 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set foldmethod=marker
 set incsearch 
-set shiftwidth=4	" used by >> and <<
+set shiftwidth=2	" used by >> and <<
 
 "Setting Spell file
 set spellfile=$HOME/.vim/dict.add
@@ -39,9 +39,9 @@ map <A-down> <ESC>gj
 autocmd VimLeavePre *.cgi,*.bash,*.sh,*.py !chmod +x % 
 
 " Some thing about <tab> {{{
-set softtabstop=4  " instead of tabs, insert 4 whitespaces
+set softtabstop=2  " instead of tabs, insert 4 whitespaces
 set expandtab   " to work compatible with 'set softtabstop=4'
-set shiftwidth=4 " sets the default 
+set shiftwidth=2 " sets the default 
 set shiftround " makes indent always multiples of shiftwidth (when used > and <)
 "imap <silent> <S-tab> <C-v><tab> " Shift-tab to insert a hard tab
 "set nojoinspaces " Not sure, leave it off
@@ -55,7 +55,6 @@ set cursorline
 set cursorcolumn
 highlight CursorLine ctermbg=none
 highlight CursorColumn ctermbg=lightgray
-
 
 "flag problematic whitespace (trailing and spaces before tabs)
 highlight RedundantSpaces term=standout ctermbg=red guibg=red
@@ -77,6 +76,7 @@ filetype plugin on
 
 "Execute python files by a single keystroke
 map <F5> :w<CR>:!/usr/bin/env python % <CR>
+map <F4> :w<CR>:!/bin/bash % <CR>
 
 "Compile latex files with single stroke
 map <F6> :w<CR>:!pdflatex % <CR>
