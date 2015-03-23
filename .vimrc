@@ -20,6 +20,7 @@ set ruler		" show the cursor position all the time
 set foldmethod=marker
 set incsearch 
 set shiftwidth=2	" used by >> and <<
+set tabpagemax=100
 
 "Setting Spell file
 set spellfile=$HOME/.vim/dict.add
@@ -43,7 +44,7 @@ set softtabstop=2  " instead of tabs, insert 4 whitespaces
 set expandtab   " to work compatible with 'set softtabstop=4'
 set shiftwidth=2 " sets the default 
 set shiftround " makes indent always multiples of shiftwidth (when used > and <)
-"imap <silent> <S-tab> <C-v><tab> " Shift-tab to insert a hard tab
+imap <silent> <S-tab> <C-v><tab> " Shift-tab to insert a hard tab
 "set nojoinspaces " Not sure, leave it off
 " }}}
 
@@ -53,14 +54,14 @@ set statusline=%F%m%r%h%w\ [FRMT=%{&ff}]\ [TYPE=%Y]\ [P=%l/%L,%04v][%p%%]" Statu
 
 set cursorline
 set cursorcolumn
-highlight CursorLine ctermbg=none
+"highlight CursorLine ctermbg=none
 highlight CursorColumn ctermbg=lightgray
 
 "flag problematic whitespace (trailing and spaces before tabs)
-highlight RedundantSpaces term=standout ctermbg=red guibg=red
-match RedundantSpaces /\s\+$\| \+\ze\t/ "\ze sets end of match so only spaces highlighted
+"highlight RedundantSpaces term=standout ctermbg=red guibg=red
+"match RedundantSpaces /\s\+$\| \+\ze\t/ "\ze sets end of match so only spaces highlighted
 "use :set list! to toggle visible whitespace on/off
-set listchars=tab:>-,trail:.,extends:>
+"set listchars=tab:>-,trail:.,extends:>
 
 " }}}
 
@@ -82,7 +83,7 @@ map <F4> :w<CR>:!/bin/bash % <CR>
 map <F6> :w<CR>:!pdflatex % <CR>
 
 "Open pdf files in the current dir with single stroke
-map <F7> :!evince *.pdf& <CR>
+map <buffer> <F7> :!evince *.pdf& <CR>
 
 "My abbreviations
 ":iabbrev myAddr Chez. Maria Padkina, Rue Crespin 16, 1206, GE / Switzerland
@@ -199,3 +200,4 @@ endfunction
 
 
 set foldtext=MyFoldText()
+
