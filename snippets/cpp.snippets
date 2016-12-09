@@ -30,16 +30,16 @@ snippet cl
 
 	class ${2:`Filename('$1_t', 'name')`} {
 
-	private:
+	 private:
 		${3:/* data */}
 
-	public:
-		$2 (${4:arguments});
-		~$2 ();
+	 public:
+		$2(${4:arguments});
+		~$2();
 
 	};
 	#endif
 
 # cout
 snippet cout
-	std::cout << ${1:"smtg"} ${2:<<std::endl} ;
+	std::cout << ${1:"smtg"} ${2:<< std::endl};
