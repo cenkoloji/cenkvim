@@ -204,4 +204,5 @@ set foldtext=MyFoldText()
 
 command Syn set foldmethod=syntax
 command Mrk set foldmethod=marker
+command Ind set foldmethod=indent
 
