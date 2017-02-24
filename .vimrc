@@ -17,10 +17,11 @@ set viminfo='20,\"50	" read/write a .viminfo file, don't store more
 set hidden 		" Allow switching buffers without writing to disk
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
-set foldmethod=marker
+set foldmethod=syntax
 set incsearch 
 set shiftwidth=2	" used by >> and <<
 set tabpagemax=100
+set complete-=i         " remove include files from autocomplete
 
 "Setting Spell file
 set spellfile=$HOME/.vim/dict.add
@@ -37,7 +38,7 @@ map <A-up> <ESC>gk
 map <A-down> <ESC>gj
 
 " Making scripts automatically executable (Creates an extra file as file.py~) 
-autocmd VimLeavePre *.cgi,*.bash,*.sh,*.py !chmod +x % 
+"autocmd VimLeavePre *.cgi,*.bash,*.sh,*.py !chmod +x % 
 
 " Some thing about <tab> {{{
 set softtabstop=2  " instead of tabs, insert 4 whitespaces
@@ -53,9 +54,9 @@ set laststatus=2
 set statusline=%F%m%r%h%w\ [FRMT=%{&ff}]\ [TYPE=%Y]\ [P=%l/%L,%04v][%p%%]" Statusline Formatting
 
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 "highlight CursorLine ctermbg=none
-highlight CursorColumn ctermbg=lightgray
+"highlight CursorColumn ctermbg=lightgray
 
 "flag problematic whitespace (trailing and spaces before tabs)
 "highlight RedundantSpaces term=standout ctermbg=red guibg=red
@@ -200,4 +201,7 @@ endfunction
 
 
 set foldtext=MyFoldText()
+
+command Syn set foldmethod=syntax
+command Mrk set foldmethod=marker
 
