@@ -207,8 +207,8 @@ snippet framecol
 	\column{0.5\textwidth}
 	\begin{center}
 	    \includegraphics[width=\textwidth]{plots/${3:plotfilename}}
-	 \end{center}
-	 \end{columns}
+	\end{center}
+	\end{columns}
 
 	\end{frame}
 	% frame $1 }}}
@@ -238,17 +238,48 @@ snippet framebl
 
 snippet col
 	\begin{columns}
+
 	\column{0.5\textwidth}
+	\begin{itemize}
+	  \item 
+	\end{itemize}
+
 	\column{0.5\textwidth}
 	\begin{center}
 	    \includegraphics[width=\textwidth]{plots/${3:plotfilename}}
-	 \end{center}
-	 \end{columns}
+	\end{center}
+	\end{columns}
 
 snippet bl
-	\begin{block}{${2:blocktitle}}
+	\begin{block}{}
+	  \begin{itemize}
+	    \item 
+	  \end{itemize}
 	\end{block}
 
-	\begin{block}{${4:blocktitle}}
+snippet colbl
+	\begin{columns}
+
+	\column{0.5\textwidth}
+
+	\begin{block}{}
+	  \begin{itemize}
+	    \item 
+	  \end{itemize}
 	\end{block}
+
+	\begin{block}{}
+	  \begin{itemize}
+	    \item 
+	  \end{itemize}
+	\end{block}
+
+	\column{0.5\textwidth}
+
+	\begin{center}
+	    \includegraphics[width=\textwidth]{}
+	    \includegraphics[width=\textwidth]{}
+	\end{center}
+	\end{columns}
+
 
