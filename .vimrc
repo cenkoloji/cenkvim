@@ -19,7 +19,7 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set foldmethod=syntax
 set incsearch 
-set shiftwidth=2	" used by >> and <<
+set shiftwidth=4	" used by >> and <<
 set tabpagemax=100
 set complete-=i         " remove include files from autocomplete
 
@@ -41,9 +41,9 @@ map <A-down> <ESC>gj
 "autocmd VimLeavePre *.cgi,*.bash,*.sh,*.py !chmod +x % 
 
 " Some thing about <tab> {{{
-set softtabstop=2  " instead of tabs, insert 4 whitespaces
+set softtabstop=4  " instead of tabs, insert 4 whitespaces
 set expandtab   " to work compatible with 'set softtabstop=4'
-set shiftwidth=2 " sets the default 
+set shiftwidth=4 " sets the default 
 set shiftround " makes indent always multiples of shiftwidth (when used > and <)
 imap <silent> <S-tab> <C-v><tab> " Shift-tab to insert a hard tab
 "set nojoinspaces " Not sure, leave it off
@@ -59,7 +59,7 @@ set cursorline
 "highlight CursorColumn ctermbg=lightgray
 
 "flag problematic whitespace (trailing and spaces before tabs)
-"highlight RedundantSpaces term=standout ctermbg=red guibg=red
+highlight RedundantSpaces term=standout ctermbg=red guibg=red
 "match RedundantSpaces /\s\+$\| \+\ze\t/ "\ze sets end of match so only spaces highlighted
 "use :set list! to toggle visible whitespace on/off
 "set listchars=tab:>-,trail:.,extends:>
@@ -206,3 +206,5 @@ command Syn set foldmethod=syntax
 command Mrk set foldmethod=marker
 command Ind set foldmethod=indent
 
+set nocscopeverbose 
+source ~/.vim/plugin/cscope_maps.vim
