@@ -17,8 +17,12 @@ vmap sf "zdi\frac{<C-R>z}<ESC>a{}<ESC>
 vmap st :s/ \+/ \& /g<CR>
 
 
+
 " {\em }
 vmap se "zdi{\em <C-R>z}<ESC>
 
 " \enquote{ }
 vmap sq "zdi\enquote{ <C-R>z}<ESC>
+
+" \texttt{ }
+vmap sT "zdi\texttt{<C-R>z}<ESC>
