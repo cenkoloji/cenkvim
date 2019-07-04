@@ -33,6 +33,11 @@ set directory^=$HOME/.vim_swap
 vnoremap x "_x
 vnoremap X "_X
 
+"gf opens files in new tab
+nnoremap gf <C-W>gf
+vnoremap gf <C-W>gf
+
+
 "Mapping for going through wrapped lines
 map <A-up> <ESC>gk
 map <A-down> <ESC>gj
